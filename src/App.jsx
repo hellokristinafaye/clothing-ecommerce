@@ -5,6 +5,7 @@ import Collection from './pages/Collection';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Product from './pages/Product';
+import Cart from './pages/Cart';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/product/:productId" element={<Product/>} />
+        <Route path="/cart" element={<Cart/>} />
       </Routes>
 
     </div>
