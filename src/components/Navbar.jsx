@@ -49,6 +49,8 @@ const Navbar = () => {
                     <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[15px]">15</p>
                 </Link>
 
+                {/* For Small Screens */}
+                <img src={assets.menu_icon} alt="" className="" />
     </div>
 
 
