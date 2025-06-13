@@ -46,6 +46,7 @@ const Navbar = () => {
             
                 <Link to='/cart' className='relative'>
                     <img src={assets.cart_icon} alt="" className="w-5 min-w-5" />
+                    <p className="">5</p>
                 </Link>
 
     </div>
