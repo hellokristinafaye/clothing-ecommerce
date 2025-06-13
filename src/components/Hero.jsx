@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className="flex flex-col sm:flex-row border border-gray-400 ">Hero</div>
   )
 }
 
