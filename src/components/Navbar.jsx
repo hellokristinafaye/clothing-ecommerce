@@ -65,6 +65,7 @@ const Navbar = () => {
                         <img src={assets.dropdown_icon} alt="" className="h-4 rotate-180" />
                         <p className="">Back</p>
                     </div>
+                    <NavLink to='/'>HOME</NavLink>
                 </div>
                 menu
         </div>
