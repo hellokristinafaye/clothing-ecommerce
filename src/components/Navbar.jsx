@@ -55,7 +55,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* For Small Screens */}
-                <img src={assets.menu_icon} alt="" className="w-5 cursor-pointer sm:hidden" />
+                <img onClick={()=>setVisible(true)} src={assets.menu_icon} alt="" className="w-5 cursor-pointer sm:hidden" />
     </div>
 
 
