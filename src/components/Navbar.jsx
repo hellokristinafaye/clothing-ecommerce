@@ -58,8 +58,14 @@ const Navbar = () => {
                 <img onClick={()=>setVisible(true)} src={assets.menu_icon} alt="" className="w-5 cursor-pointer sm:hidden" />
     </div>
 
-            {/* Sidebar menu for small screens */}
+            {/* Sidebar menu for small screens, conditional rendering via ternary operator */}
             <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
+                <div className="flex flex-col text-gray-600">
+                    <div className="flex items-center gap-4 p-3">
+                        <img src={assets.dropdown_icon} alt="" className="h-4 rotate-180" />
+                        <p className="">Back</p>
+                    </div>
+                </div>
                 menu
         </div>
     </div>
