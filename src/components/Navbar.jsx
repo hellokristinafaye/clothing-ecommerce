@@ -23,7 +23,13 @@ const Navbar = () => {
           <p className="">CONTACT</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-      </ul>
+          </ul>
+          
+    <div className="flex items-center gap-6">
+           <img src="" alt="" className="" /> 
+    </div>
+
+
     </div>
   );
 }
