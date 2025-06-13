@@ -107,7 +107,7 @@ const Navbar = () => {
             CONTACT
           </NavLink>
         </div>
-      </div>
+       </div>
     </div>
   );
 };
