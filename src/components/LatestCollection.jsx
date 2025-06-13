@@ -11,7 +11,6 @@ const LatestCollection = () => {
           <div className="text-center py-8 text-3xl">
               <Title text1={'LATEST'} text2={'COLLECTION'} />
           </div>
-          LatestCollection
       </div>
   )
 }
