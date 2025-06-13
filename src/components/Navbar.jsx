@@ -107,7 +107,6 @@ const Navbar = () => {
             CONTACT
           </NavLink>
         </div>
-        menu
       </div>
     </div>
   );
