@@ -61,7 +61,7 @@ const Navbar = () => {
             {/* Sidebar menu for small screens, conditional rendering via ternary operator */}
             <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
                 <div className="flex flex-col text-gray-600">
-                    <div className="flex items-center gap-4 p-3">
+                    <div onClick={()=>setVisible(false)} className="flex items-center gap-4 p-3 cursor-pointer">
                         <img src={assets.dropdown_icon} alt="" className="h-4 rotate-180" />
                         <p className="">Back</p>
                     </div>
