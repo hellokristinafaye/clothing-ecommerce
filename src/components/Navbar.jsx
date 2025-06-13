@@ -78,7 +78,7 @@ const Navbar = () => {
             <p className="">Back</p>
                   </div>
                   
-          <NavLink className="py-2 pl-6 border" to="/">
+          <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to="/">
             HOME
           </NavLink>
           <NavLink className="py-2 pl-6 border" to="/collection">
@@ -89,7 +89,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink className="py-2 pl-6 border" to="/contact">
             CONTACT
-                  </NavLink>
+            </NavLink>
                   
         </div>
         menu
