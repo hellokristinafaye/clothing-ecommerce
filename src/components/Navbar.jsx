@@ -22,13 +22,13 @@ const Navbar = () => {
               </NavLink>
               <NavLink to='/' className="flex flex-col items-center gap-1">
                   
-                  <p className="">Home</p>
+                  <p className="">ABOUT</p>
                   <hr className="w-2/4 border-none h-[1.5px] bg-gray-700" />
                   
               </NavLink>
               <NavLink to='/' className="flex flex-col items-center gap-1">
                   
-                  <p className="">Home</p>
+                  <p className="">CONTACT</p>
                   <hr className="w-2/4 border-none h-[1.5px] bg-gray-700" />
                   
               </NavLink>
