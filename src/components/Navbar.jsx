@@ -26,7 +26,7 @@ const Navbar = () => {
           </ul>
           
     <div className="flex items-center gap-6">
-           <img src="" alt="" className="" /> 
+           <img src={assets.search_icon} alt="" className="w-5 cursor-pointer" /> 
     </div>
 
 
