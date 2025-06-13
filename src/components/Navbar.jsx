@@ -29,6 +29,9 @@ const Navbar = () => {
               <img src={assets.search_icon} alt="" className="w-5 cursor-pointer" /> 
               <div className="group relative">
                   <img src={assets.profile_icon} alt="" className="w-5 cursor-pointer" />
+                  <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
+                      
+                  </div>
               </div>
     </div>
 
