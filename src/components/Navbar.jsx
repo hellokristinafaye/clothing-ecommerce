@@ -1,11 +1,15 @@
 import React from 'react';
 import { assets } from "../assets/frontend_assets/assets.js";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
-  return (
+    return (
+      
+        // Logo
     <div className="flex items-center justify-between py-5 font-medium">
       <img src={assets.logo} alt="" className="w-36" />
 
+          
+          {/* Navigation Link Menu */}
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p className="">HOME</p>
@@ -25,6 +29,8 @@ const Navbar = () => {
         </NavLink>
           </ul>
           
+
+          {/* Dropdown Menu */}
     <div className="flex items-center gap-6">
               <img src={assets.search_icon} alt="" className="w-5 cursor-pointer" /> 
               <div className="group relative">
@@ -36,7 +42,12 @@ const Navbar = () => {
                             <p className="cursor-pointer hover:text-black">Logout</p>
                       </div>
                   </div>
-              </div>
+                </div>
+            
+                <Link to='/cart' className='relative'>
+                    
+                </Link>
+
     </div>
 
 
