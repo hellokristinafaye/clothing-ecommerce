@@ -14,19 +14,19 @@ const Navbar = () => {
                   <hr className="w-2/4 border-none h-[1.5px] bg-gray-700" />
                   
               </NavLink>
-              <NavLink to='/' className="flex flex-col items-center gap-1">
+              <NavLink to='/collection' className="flex flex-col items-center gap-1">
                   
                   <p className="">COLLECTION</p>
                   <hr className="w-2/4 border-none h-[1.5px] bg-gray-700" />
                   
               </NavLink>
-              <NavLink to='/' className="flex flex-col items-center gap-1">
+              <NavLink to='/about' className="flex flex-col items-center gap-1">
                   
                   <p className="">ABOUT</p>
                   <hr className="w-2/4 border-none h-[1.5px] bg-gray-700" />
                   
               </NavLink>
-              <NavLink to='/' className="flex flex-col items-center gap-1">
+              <NavLink to='/contact' className="flex flex-col items-center gap-1">
                   
                   <p className="">CONTACT</p>
                   <hr className="w-2/4 border-none h-[1.5px] bg-gray-700" />
