@@ -8,7 +8,7 @@ const ProductItem = ({ id, image, name, price }) => {
   return (
       <div>ProductItem
     
-          <Link to={`/product/${id}`}>
+          <Link className="text-gray-700 cursor-pointer" to={`/product/${id}`}>
       </Link> 
 
       </div>
