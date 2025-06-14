@@ -7,7 +7,8 @@ const NewsletterBox = () => {
           <p className="text-gray-400 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
           <form className="">
-              <input type="email" placeholder="Enter your email" className="w-full sm:flex-1 outline-none" required/>
+              <input type="email" placeholder="Enter your email" className="w-full sm:flex-1 outline-none" required />
+              <button className="" type="submit">SUBSCRIBE</button>
           </form>
     </div >
   )
