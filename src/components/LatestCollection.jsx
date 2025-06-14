@@ -19,6 +19,8 @@ const LatestCollection = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eum exercitationem.</p>
           </div>
 
+          {/* Trending Products */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6"></div>
 
       </div>
   )
