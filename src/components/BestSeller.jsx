@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
+import Title from './Title';
 
 const BestSeller = () => {
 
@@ -14,7 +15,7 @@ const BestSeller = () => {
   return (
       <div className='my-10'>BestSeller
           <div className="text-center text-3xl py-8">
-              
+              <Title text1={'BEST'} text2={'SELLERS'} />
           </div>
 
     </div>
