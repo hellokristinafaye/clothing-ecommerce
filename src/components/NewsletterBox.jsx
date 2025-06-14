@@ -2,7 +2,8 @@ import React from 'react'
 
 const NewsletterBox = () => {
   return (
-        <div className="text-center" > NewsletterBox
+      <div className="text-center" > NewsletterBox
+          <p className="">Subscribe now & get 20% off</p>
     </div >
   )
 }
