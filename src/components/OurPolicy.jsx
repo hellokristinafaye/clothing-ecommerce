@@ -7,7 +7,8 @@ const OurPolicy = () => {
       
           <div className="">
               <img src={assets.exchange_icon} alt="" className="w-12 m-auto mb-5" />
-    </div>
+              <p className="">Easy Exchange Policy</p>
+            </div>
       </div>
   )
 }
