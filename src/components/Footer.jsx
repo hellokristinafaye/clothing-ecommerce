@@ -1,4 +1,5 @@
 import React from 'react'
+import { assets } from '../assets/frontend_assets/assets'
 
 const Footer = () => {
   return (
@@ -6,6 +7,10 @@ const Footer = () => {
           
           <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_fr] gap-14 my-10 mt-40 text-sm">
               
+              <div className="">
+                  <img src={assets.logo} alt="" className="" />
+            </div>
+
           </div>
     </div>
   )
