@@ -6,6 +6,8 @@ import ProductItem from './ProductItem';
 const LatestCollection = () => {
 
     const { products } = useContext(ShopContext);
+    console.log(products);
+
     const [latestProducts, setLatestProducts] = useState([]);
 
     useEffect(() => {
@@ -23,11 +25,12 @@ const LatestCollection = () => {
           {/* Rendering Products */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
              {/* the below code is what breaks the site. */}
-              {/* {
+              {
                   latestProducts.map((item, index) => (
                       <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price} /> 
                   ))
-              } */}
+              }
+                         
           </div>
 
       </div>
