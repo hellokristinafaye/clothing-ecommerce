@@ -2,7 +2,8 @@ import React from 'react'
 
 const NewsletterBox = () => {
   return (
-    <div>NewsletterBox</div>
+        <div className="text-center" > NewsletterBox
+    </div >
   )
 }
 
