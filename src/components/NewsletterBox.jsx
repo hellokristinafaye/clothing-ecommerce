@@ -2,8 +2,10 @@ import React from 'react'
 
 const NewsletterBox = () => {
 
-    const onSubmitHandler = () => {
-
+    const onSubmitHandler = (event) => {
+        event.preventDefault();
+        alert("Thanks for subscribing!")
+        // will add the actual logic when working the back end.
     }
 
   return (
