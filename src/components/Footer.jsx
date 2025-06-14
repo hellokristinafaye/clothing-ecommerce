@@ -15,7 +15,10 @@ const Footer = () => {
               <div className="">
                   <p className="text-xl font-medium mb-5">COMPANY</p>
                   <ul className="flex flex-col gap-1 text-gray-600">
-                      
+                      <li className="">Home</li>
+                      <li className="">About Us</li>
+                      <li className="">Delivery</li>
+                      <li className="">Privacy Policy</li>
                   </ul>
               </div>
 
