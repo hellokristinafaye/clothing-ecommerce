@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-const ProductItem = () => {
+const ProductItem = ({ id, image, name, price }) => {
+    
+    const { currency } = useContext(ShopContext);
+
   return (
     <div>ProductItem</div>
   )
