@@ -8,7 +8,7 @@ const NewsletterBox = () => {
 
           <form className="">
               <input type="email" placeholder="Enter your email" className="w-full sm:flex-1 outline-none" required />
-              <button className="" type="submit">SUBSCRIBE</button>
+              <button className="bg-black text-white text-xs px-10 py-4" type="submit">SUBSCRIBE</button>
           </form>
     </div >
   )
