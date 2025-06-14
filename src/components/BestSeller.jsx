@@ -12,7 +12,12 @@ const BestSeller = () => {
     }, [])
 
   return (
-    <div>BestSeller</div>
+      <div className='my-10'>BestSeller
+          <div className="text-center text-3xl py-8">
+              
+          </div>
+
+    </div>
   )
 }
 
