@@ -19,7 +19,7 @@ const Collection = () => {
         <div
           className={`border border-gray-300 pl-5 my-5 p-3 ${
             showFilter ? "" : "hidden"
-          } sm:block `}
+          } sm:block  `}
         >
           <p className="mb-3 text-sm font-medium">CATEGORIES</p>
 
