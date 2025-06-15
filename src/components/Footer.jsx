@@ -22,6 +22,10 @@ const Footer = () => {
                   </ul>
               </div>
 
+              <div className="">
+                  <p className="">GET IN TOUCH</p>
+              </div>
+
           </div>
     </div>
   )
