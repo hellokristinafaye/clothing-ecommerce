@@ -23,7 +23,7 @@ const Footer = () => {
               </div>
 
               <div className="">
-                  <p className="">GET IN TOUCH</p>
+                  <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
               </div>
 
           </div>
