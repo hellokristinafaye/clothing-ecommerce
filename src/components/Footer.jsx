@@ -34,7 +34,12 @@ const Footer = () => {
         </div>
               
 
-      </div>
+          </div>
+          
+          <div className="">
+              <hr className="" />
+              <p className=""></p>
+          </div>
     </div>
   );
 };
