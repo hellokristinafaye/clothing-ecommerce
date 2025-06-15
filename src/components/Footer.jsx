@@ -38,7 +38,7 @@ const Footer = () => {
           
           <div className="">
               <hr className="" />
-              <p className=""></p>
+              <p className="py-5 text-sm text-centerg"></p>
           </div>
     </div>
   );
