@@ -37,7 +37,7 @@ const Collection = () => {
         </div>
         {/* SubCategory Filter */}
         <div
-          className={`border border-gray-300 pl-5 mt-6 ${
+          className={`border border-gray-300 pl-5 mt-6 p-3 ${
             showFilter ? "" : "hidden"
           } sm:block `}
         >
