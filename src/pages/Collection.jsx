@@ -5,7 +5,7 @@ import { assets } from '../assets/frontend_assets/assets';
 const Collection = () => {
 
   const { products } = useContext(ShopContext);
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState(true);
  
   return (
     <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t">
