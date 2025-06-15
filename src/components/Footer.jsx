@@ -28,7 +28,10 @@ const Footer = () => {
 
         <div className="">
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
-          <ul className="flex flex-col gap-1 text-gray-600"></ul>
+                  <ul className="flex flex-col gap-1 text-gray-600">
+                      <li className="">+1-555-555-5555</li>
+                      <li className=""></li>
+          </ul>
         </div>
       </div>
     </div>
