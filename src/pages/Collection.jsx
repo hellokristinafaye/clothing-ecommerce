@@ -76,7 +76,11 @@ const Collection = () => {
             <option value="high-low" className="">Sort by: High to Low</option>
             </select>
 
-            </div>
+        </div>
+        
+        {/* Map Products */}
+          <div className=""></div>
+
         
       </div>      
       
