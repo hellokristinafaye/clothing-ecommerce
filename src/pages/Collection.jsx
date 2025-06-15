@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
+import { assets } from '../assets/frontend_assets/assets';
 
 const Collection = () => {
 
@@ -12,6 +13,7 @@ const Collection = () => {
       <div className="min-w-60">
         <p className="my-2 text-xl flex items-center cursor-pointer gap-2">
           FILTERS
+          <img src={assets.dropdown_icon} alt="" className="" />
         </p>
         {/* Category Filter */}
         <div
