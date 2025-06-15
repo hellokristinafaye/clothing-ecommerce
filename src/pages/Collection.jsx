@@ -45,15 +45,18 @@ const Collection = () => {
 
           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Men"} /> Men
+              <input type="checkbox" className="w-3" value={"Topwear"} />{" "}
+              Topwear
             </p>
 
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Women"} /> Women
+              <input type="checkbox" className="w-3" value={"Bottomwear"} />
+              Bottomwear
             </p>
 
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Kids"} /> Kids
+              <input type="checkbox" className="w-3" value={"Winterwear"} />
+              Winterwear
             </p>
           </div>
         </div>
