@@ -13,7 +13,7 @@ const Collection = () => {
       <div className="min-w-60">
         <p className="my-2 text-xl flex items-center cursor-pointer gap-2">
           FILTERS
-          <img src={assets.dropdown_icon} alt="" className="" />
+          <img src={assets.dropdown_icon} alt="" className={`h-3 sm:hidden ${showFilter? 'rotate-90': ''}`} />
         </p>
         {/* Category Filter */}
         <div
