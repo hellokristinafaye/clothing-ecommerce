@@ -65,7 +65,7 @@ const Collection = () => {
       </div>
 
     {/* Right Side */}
-      <div className="">
+      <div className="flex-1">
       
       </div>      
       
