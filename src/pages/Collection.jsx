@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { assets } from '../assets/frontend_assets/assets';
+import Title from '../components/Title';
 
 const Collection = () => {
 
@@ -66,7 +67,10 @@ const Collection = () => {
 
     {/* Right Side */}
       <div className="flex-1">
-      
+        <div className="flex justify-between text-base sm:text-2xl mb-4">
+          <Title  />
+            </div>
+        
       </div>      
       
 
