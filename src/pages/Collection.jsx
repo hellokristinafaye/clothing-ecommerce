@@ -71,7 +71,9 @@ const Collection = () => {
           <Title text1={'ALL'} text2={'COLLECTIONS'} />
             {/* Product Sort */}
           <select className="border-2 border-gray-300 text-sm px-2">
-            
+            <option value="relevent" className=""></option>
+            <option value="low-high" className=""></option>
+            <option value="high-low" className=""></option>
             </select>
 
             </div>
