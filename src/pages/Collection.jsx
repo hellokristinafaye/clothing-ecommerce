@@ -15,7 +15,7 @@ const Collection = () => {
         </p>
         {/* Category Filter */}
         <div
-          className={`border border-gray-300 pl-5 mt-6 p-3 ${
+          className={`border border-gray-300 pl-5 my-5 p-3 ${
             showFilter ? "" : "hidden"
           } sm:block `}
         >
