@@ -10,7 +10,7 @@ const Collection = () => {
 
       {/* Filter Options */}
       <div className="min-w-60">
-
+        <p className="">FILTERS</p>
       </div>
 
 
