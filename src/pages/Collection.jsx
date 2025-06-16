@@ -48,6 +48,17 @@ const Collection = () => {
     setFilterProducts(productsCopy);
   }
 
+  // Sort By logic:
+  const sortProduct = () => {
+    // makes a copy
+    let fpCopy = filterProducts.slice();
+
+    switch (sortType) {
+      
+    }
+
+  }
+
   // * Unnecessary logic
           // useEffect(() => {
           //   setFilterProducts(products);
