@@ -46,10 +46,15 @@ const Collection = () => {
   }, [])
 
   // To see console log change categories in the array
-  // useEffect(() => {
-  //   console.log(subCategory);
-  // }, [subCategory])
+  useEffect(() => {
+    console.log(category);
+    console.log(subCategory);
+  }, [category, subCategory])
 
+// to excecute filter fn whenever category or subCategory is changed
+  useEffect(() => {
+    applyFilter();
+  }, [category, subCategory])
  
   return (
     <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t">
