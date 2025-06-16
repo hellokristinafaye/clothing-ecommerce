@@ -12,7 +12,7 @@ const SearchBar = () => {
               <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Search" className="flex-1 outline-none bg-inherit text-sm" />
               <img src={assets.search_icon} alt="" className="w-4" />
           </div>
-          <img src={assets.cross_icon} alt="" className="" />
+          <img src={assets.cross_icon} alt="" className="inline w-3 cursor-pointer" />
     </div>
   ) : null;
 };
