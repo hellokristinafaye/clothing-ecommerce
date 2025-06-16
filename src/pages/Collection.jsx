@@ -89,7 +89,7 @@ const Collection = () => {
 // to excecute filter fn whenever category or subCategory is changed
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory])
+  }, [category, subCategory, search, showSearch])
 
 // For Sorting
   useEffect(() => {
