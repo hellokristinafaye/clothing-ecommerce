@@ -7,7 +7,7 @@ const SearchBar = () => {
 
     
     return showSearch ? (
-        <div>SearchBar</div>
+        <div className="border-t border-b bg-gray-50 text-center">SearchBar</div>
     )
         : null
   ;
