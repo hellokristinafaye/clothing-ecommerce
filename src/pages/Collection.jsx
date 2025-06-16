@@ -37,8 +37,10 @@ const Collection = () => {
 
     // use the if shortcut!
     if (category.length > 0) {
-      productsCopy.filter(item => category.includes(item.category));
+      productsCopy = productsCopy.filter(item => category.includes(item.category));
     }
+
+    setFilterProducts(productsCopy);
   }
 
   useEffect(() => {
