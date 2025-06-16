@@ -18,7 +18,7 @@ const Collection = () => {
     if (category.includes(e.target.value)) {
       setCategory(prev=>prev.filter(item=> item !== e.target.value))
     } else {
-      setCategory(prev=> [...prev, e.target.value])
+      setCategory(prev=> [...prev, e.target.value]) 
     }
   }
 
@@ -51,15 +51,33 @@ const Collection = () => {
 
           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Men"} /> Men
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"Men"}
+                onChange={toggleCategory}
+              />{" "}
+              Men
             </p>
 
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Women"} /> Women
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"Women"}
+                onChange={toggleCategory}
+              />{" "}
+              Women
             </p>
 
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Kids"} /> Kids
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"Kids"}
+                onChange={toggleCategory}
+              />{" "}
+              Kids
             </p>
           </div>
         </div>
@@ -111,7 +129,13 @@ const Collection = () => {
         {/* Map Products */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
           {filterProducts.map((item, index) => (
-            <ProductItem key={index} name={item.name} id={item._id} price={item.price} image={item.image} />
+            <ProductItem
+              key={index}
+              name={item.name}
+              id={item._id}
+              price={item.price}
+              image={item.image}
+            />
           ))}
         </div>
       </div>
