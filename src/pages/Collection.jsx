@@ -48,15 +48,16 @@ const Collection = () => {
     setFilterProducts(productsCopy);
   }
 
-  useEffect(() => {
-    setFilterProducts(products);
-  }, [])
+  // * Unnecessary logic
+          // useEffect(() => {
+          //   setFilterProducts(products);
+          // }, [])
 
-  // To see console log change categories in the array
-  useEffect(() => {
-    console.log(category);
-    console.log(subCategory);
-  }, [category, subCategory])
+          // To see console log change categories in the array
+          // useEffect(() => {
+          //   console.log(category);
+          //   console.log(subCategory);
+          // }, [category, subCategory])
 
 // to excecute filter fn whenever category or subCategory is changed
   useEffect(() => {
