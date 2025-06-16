@@ -35,9 +35,14 @@ const Collection = () => {
     // creates a copy of the products array, stores in productsCopy
     let productsCopy = products.slice();
 
-    // use the if shortcut!
+    // use the if shortcut! **Logic for filtering by Category (Men, Women, Kids)
     if (category.length > 0) {
       productsCopy = productsCopy.filter(item => category.includes(item.category));
+    }
+
+    // Logic for filtering by SubCategory (Topwear, Bottomwear, Winterwear)
+    if (subCategory.length > 0) {
+      productsCopy = productsCopy.filter(item => subCategory.includes(item.subCategory));
     }
 
     setFilterProducts(productsCopy);
