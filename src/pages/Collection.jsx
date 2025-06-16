@@ -36,6 +36,11 @@ const Collection = () => {
     // creates a copy of the products array, stores in productsCopy
     let productsCopy = products.slice();
 
+    // Search logic
+    if (showSearch && search) {
+      productsCopy = productsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()))
+    }
+
     // use the if shortcut! **Logic for filtering by Category (Men, Women, Kids)
     if (category.length > 0) {
       productsCopy = productsCopy.filter(item => category.includes(item.category));
@@ -84,7 +89,7 @@ const Collection = () => {
 // to excecute filter fn whenever category or subCategory is changed
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory])
+  }, [category, subCategory, search, showSearch])
 
 // For Sorting
   useEffect(() => {
