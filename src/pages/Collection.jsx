@@ -101,7 +101,6 @@ const Collection = () => {
           {filterProducts.map((item, index) => (
             <ProductItem key={index} name={item.name} id={item._id} price={item.price} image={item.image} />
           ))}
-          {/* pausing now for EOD 6/14/25 */}
         </div>
       </div>
     </div>
