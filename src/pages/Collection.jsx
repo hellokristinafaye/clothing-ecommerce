@@ -31,14 +31,25 @@ const Collection = () => {
     }
   }
 
+  const applyFilter = () => {
+    // creates a copy of the products array, stores in productsCopy
+    let productsCopy = products.slice();
+
+    // use the if shortcut!
+    if (category.length > 0) {
+      productsCopy.filter(item => category.includes(item.category));
+    }
+  }
+
   useEffect(() => {
     setFilterProducts(products);
   }, [])
 
-  // To change categories in the array
-  useEffect(() => {
-    console.log(subCategory);
-  }, [subCategory])
+  // To see console log change categories in the array
+  // useEffect(() => {
+  //   console.log(subCategory);
+  // }, [subCategory])
+
  
   return (
     <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t">
