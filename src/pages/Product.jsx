@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext';
 
 const Product = () => {
 
   const { productId } = useParams();
-  console.log(productId)
+
+  const { products } = useContext(ShopContext);
+  
+
 
   return (
     <div>Product</div>
