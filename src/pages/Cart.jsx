@@ -25,7 +25,10 @@ const Cart = () => {
   }, [cartItems])
 
   return (
-    <div>Cart</div>
+    <div className="border-t pt-14" >Cart
+
+
+    </div>
   )
 }
 
