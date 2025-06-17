@@ -59,6 +59,11 @@ const ShopContextProvider = (props) => {
   //   console.log(cartItems);
   // },[cartItems])
 
+  // On Cart Page: Trash button functionality to remove items if clicked
+  const updateQuantity = async () => {
+    
+  }
+
   const value = {
     products,
     currency,
