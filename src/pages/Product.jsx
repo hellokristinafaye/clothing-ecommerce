@@ -106,7 +106,7 @@ const Product = () => {
         </div>
       </div>
 
-      {/* ------------ Related Product --------------- */}
+      {/* ------------ Display Related Products --------------- */}
 
       
     </div>
