@@ -60,8 +60,13 @@ const ShopContextProvider = (props) => {
   // },[cartItems])
 
   // On Cart Page: Trash button functionality to remove items if clicked
-  const updateQuantity = async () => {
+  const updateQuantity = async (itemId, size, quantity) => {
+    // create copy of cartItems
+    let cartData = structuredClone(cartItems);
     
+    cartData[itemId][size] = quantity;
+
+    setCartItems(cartData);
   }
 
   const value = {
