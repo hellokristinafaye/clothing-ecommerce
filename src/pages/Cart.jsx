@@ -5,7 +5,8 @@ import { assets } from '../assets/frontend_assets/assets';
 
 const Cart = () => {
 
-  const { products, currency, cartItems } = useContext(ShopContext);
+  const { products, currency, cartItems,updateQuantity } =
+    useContext(ShopContext);
 
   const [cartData, setCartData] = useState([]);
 
@@ -71,7 +72,12 @@ const Cart = () => {
                     defaultValue={item.quantity}
                     className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1 m-auto"
                   />
-                  <img src={assets.bin_icon} alt="" className="w-4 mr-4 sm:w-5 cursor-pointer" />
+                  <img
+                    onClick={() => updateQuantity( item._id, item.size, 0)}
+                    src={assets.bin_icon}
+                    alt=""
+                    className="w-4 mr-4 sm:w-5 cursor-pointer"
+                  />
                 </div>
               </div>
             );
