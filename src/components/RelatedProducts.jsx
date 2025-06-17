@@ -25,7 +25,7 @@ const RelatedProducts = ({ category, subCategory }) => {
 
   return (
       <div className="my-24">RelatedProducts
-        
+        <div className="text-center text-3xl py-2"></div>
       </div>
   )
 }
