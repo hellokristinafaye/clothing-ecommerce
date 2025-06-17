@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
+import Title from './Title';
 
 const RelatedProducts = ({ category, subCategory }) => {
     
@@ -25,7 +26,9 @@ const RelatedProducts = ({ category, subCategory }) => {
 
   return (
       <div className="my-24">RelatedProducts
-        <div className="text-center text-3xl py-2"></div>
+          <div className="text-center text-3xl py-2">
+              <Title text1={'RELATED'} text2={'PRODUCTS'} />
+        </div>
       </div>
   )
 }
