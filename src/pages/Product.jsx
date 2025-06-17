@@ -26,9 +26,9 @@ const Product = () => {
   }, [productId, products])
 
 
-  return (
+  return productData?  (
     <div>Product</div>
-  )
+  ) : <div className="opacity-0"></div>
 }
 
 export default Product
