@@ -105,6 +105,10 @@ const Product = () => {
               <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quae aliquam, ducimus numquam ea iusto hic.</p>
         </div>
       </div>
+
+      {/* ------------ Related Product --------------- */}
+
+      
     </div>
   ) : (
     <div className="opacity-0"></div>
