@@ -84,6 +84,10 @@ const Product = () => {
           </div>
         </div>
       </div>
+
+      {/* ------------ Description & Review Section --------------- */}
+      {/* Pausing here for a moment. 3:11 in tutorial */}
+
     </div>
   ) : (
     <div className="opacity-0"></div>
