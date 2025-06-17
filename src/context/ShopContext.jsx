@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { products } from "../assets/frontend_assets/assets";
 
 export const ShopContext = createContext();
@@ -29,6 +29,10 @@ const ShopContextProvider = (props) => {
     setCartItems(cartData);
 
   }
+
+  useEffect(() => {
+    
+  },[cartItems])
 
   const value = {
     products,
