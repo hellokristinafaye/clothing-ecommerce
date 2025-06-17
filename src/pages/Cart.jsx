@@ -52,6 +52,8 @@ const Cart = () => {
                   </div>
                 </div>
 
+                  <input type="number" min={1} defaultValue={item.quantity} className="" />
+
               </div>
             )
 
