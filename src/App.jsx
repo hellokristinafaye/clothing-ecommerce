@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
+// The below line seems unnecessary?? But we'll keep the comment in case of future bug.
 // import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
