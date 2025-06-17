@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { products } from "../assets/frontend_assets/assets";
+import { toast } from "react-toastify";
 
 export const ShopContext = createContext();
 
@@ -12,6 +13,14 @@ const ShopContextProvider = (props) => {
 
   // Add to Cart button functionality
   const addToCart = async (itemId, size) => {
+
+    // In case User hasn't selected a size
+    if (!size) {
+      toast
+    }
+
+
+
     // creates a copy of cart items
     let cartData = structuredClone(cartItems);
     // VERY cool. This stores the item by size. 
