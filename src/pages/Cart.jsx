@@ -43,7 +43,7 @@ const Cart = () => {
                 key={index}
                 className="py-4 border-t border-b text-gray-700 grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr_0.5fr] items-center gap-4"
               >
-                <div className="flex items-start justify-between gap-6">
+                <div className="flex items-start gap-6">
                   <img
                     src={productData.image[0]}
                     alt=""
@@ -68,7 +68,7 @@ const Cart = () => {
                     type="number"
                     min={1}
                     defaultValue={item.quantity}
-                    className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1"
+                    className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1 m-auto"
                   />
                 </div>
               </div>
