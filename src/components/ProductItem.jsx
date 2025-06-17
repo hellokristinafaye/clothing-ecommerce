@@ -14,7 +14,7 @@ const ProductItem = ({ id, image, name, price }) => {
             //   onClick={() => {
             //       navigate(`/product/${id}`)
             //   }}
-              to={`/product/${id}`}
+        to={`/product/${id}`}
             >
               <div className="overflow-hidden">
                   <img src={image[0]} alt="" className="hover:scale-110 transition ease-in-out" />
