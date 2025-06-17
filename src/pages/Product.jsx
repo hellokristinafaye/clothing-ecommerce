@@ -86,12 +86,13 @@ const Product = () => {
       </div>
 
       {/* ------------ Description & Review Section --------------- */}
-      {/* Pausing here for a moment. 3:11 in tutorial */}
-
+      <div className="mt-20">
+        
+              </div>
     </div>
   ) : (
     <div className="opacity-0"></div>
   );
-}
+`}
 
 export default Product
