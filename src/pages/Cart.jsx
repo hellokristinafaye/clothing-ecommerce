@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
+import { assets } from '../assets/frontend_assets/assets';
 
 const Cart = () => {
 
@@ -70,6 +71,7 @@ const Cart = () => {
                     defaultValue={item.quantity}
                     className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1 m-auto"
                   />
+                  <img src={assets.bin_icon} alt="" className="" />
                 </div>
               </div>
             );
