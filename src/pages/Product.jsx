@@ -51,7 +51,14 @@ const Product = () => {
             {productData.name}
           </h1>
 
-          <div className="flex items-center gap-1 mt-2"></div>
+          <div className="flex items-center gap-1 mt-2">
+            <img src="" alt="" className="w-3.5" />
+            <img src="" alt="" className="w-3.5" />
+            <img src="" alt="" className="w-3.5" />
+            <img src="" alt="" className="w-3.5" />
+            <img src="" alt="" className="w-3.5" />
+           
+          </div>
         </div>
         
       </div>
