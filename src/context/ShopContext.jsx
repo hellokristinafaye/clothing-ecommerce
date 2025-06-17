@@ -16,11 +16,9 @@ const ShopContextProvider = (props) => {
 
     // In case User hasn't selected a size
     if (!size) {
-      toast.error("Please select a product size.")
+      toast.error("Please select a size.")
       return;
     }
-
-
 
     // creates a copy of cart items
     let cartData = structuredClone(cartItems);
@@ -40,9 +38,26 @@ const ShopContextProvider = (props) => {
 
   }
 
-  useEffect(() => {
-    console.log(cartItems);
-  },[cartItems])
+  // To update cart count display
+  const getCartCount = () => {
+    let totalCount = 0;
+    for (const items in cartItems) {
+      for (const item in cartItems[items]) {
+        try {
+          if (cartItems[items][item] > 0) {
+            totalCount += cartItems[items][item];
+          }
+        } catch (error) {
+          
+        }
+      }
+    }
+    return totalCount;
+  }
+
+  // useEffect(() => {
+  //   console.log(cartItems);
+  // },[cartItems])
 
   const value = {
     products,
