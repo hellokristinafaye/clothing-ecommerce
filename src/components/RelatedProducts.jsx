@@ -24,7 +24,9 @@ const RelatedProducts = ({ category, subCategory }) => {
     },[products])
 
   return (
-      <div >RelatedProducts</div>
+      <div className="my-24">RelatedProducts
+        
+      </div>
   )
 }
 
