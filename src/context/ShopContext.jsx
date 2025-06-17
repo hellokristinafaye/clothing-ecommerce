@@ -14,7 +14,7 @@ const ShopContextProvider = (props) => {
   const addToCart = async (itemId, size) => {
     // creates a copy of cart items
     let cartData = structuredClone(cartItems);
-
+    // VERY cool. This stores the item by size. 
     if (cartData[itemId]) {
       if (cartData[itemId][size]) {
         cartData[itemId][size] += 1;
