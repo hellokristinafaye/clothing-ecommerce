@@ -75,6 +75,7 @@ const Product = () => {
               }
             </div>
           </div>
+          <button className="">ADD TO CART</button>
         </div>
       </div>
     </div>
