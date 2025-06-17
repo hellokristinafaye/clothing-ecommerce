@@ -10,7 +10,13 @@ const Product = () => {
   const [productData, setProductData] = useState(false);
 
   const fetchProductData = async () => {
-    
+    products.map((item) => {
+      if (item._id === productId) {
+        setProductData(item);
+        console.log(item)
+        return null;
+      }
+    })
   }
 
   useEffect(() => {
