@@ -101,7 +101,7 @@ const Product = () => {
           <p className="border px-5 py-3 text-sm">Reviews (122)</p>
         </div>
         <div className="flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500">
-
+              <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quae aliquam, ducimus numquam ea iusto hic, delectus voluptas error commodi non, officiis quam vitae veritatis nihil consequatur voluptatum ut. Ipsum?</p>
         </div>
       </div>
     </div>
