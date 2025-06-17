@@ -44,7 +44,7 @@ const Cart = () => {
                 key={index}
                 className="py-4 border-t border-b text-gray-700 grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr_0.5fr] items-center gap-4"
               >
-                <div className="flex items-start gap-6">
+                <div className="flex items-center gap-6">
                   <img
                     src={productData.image[0]}
                     alt=""
@@ -71,7 +71,7 @@ const Cart = () => {
                     defaultValue={item.quantity}
                     className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1 m-auto"
                   />
-                  <img src={assets.bin_icon} alt="" className="" />
+                  <img src={assets.bin_icon} alt="" className="w-4 mr-4 sm:w-5 cursor-pointer" />
                 </div>
               </div>
             );
