@@ -52,7 +52,7 @@ const Cart = () => {
                   </div>
                 </div>
 
-                  <input type="number" min={1} defaultValue={item.quantity} className="" />
+                  <input type="number" min={1} defaultValue={item.quantity} className="border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1" />
 
               </div>
             )
