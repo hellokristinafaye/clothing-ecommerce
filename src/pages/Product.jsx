@@ -64,6 +64,7 @@ const Product = () => {
             <p className="pl-2">(122)</p>
           </div>
           <p className="mt-5 text-3xl font-medium">{currency} {productData.price}</p>
+          <p className="">{ productData.description}</p>
         </div>
       </div>
     </div>
