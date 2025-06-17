@@ -30,7 +30,11 @@ const Product = () => {
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">Product
       {/* Product Data  */}
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
+        {/* Product Images */}
+        <div className="flex-1 flex flex-col-reverse gap-3 sm:flex-row">
+          <div className=""></div>
 
+        </div>
       </div>
     </div>
   ) : <div className="opacity-0"></div>
