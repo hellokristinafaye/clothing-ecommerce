@@ -31,7 +31,7 @@ const ShopContextProvider = (props) => {
   }
 
   useEffect(() => {
-    
+    console.log(cartItems);
   },[cartItems])
 
   const value = {
