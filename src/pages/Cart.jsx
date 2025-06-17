@@ -8,7 +8,7 @@ const Cart = () => {
   const [cartData, setCartData] = useState([]);
 
   useEffect(() => {
-    
+    // How to add items to the cart FR
     const tempData = [];
     for (const items in cartItems) {
       for (const item in cartItems[items]) {
@@ -21,8 +21,8 @@ const Cart = () => {
         }
       }
     }
-    console.log(tempData);
-  },[cartItems])
+    setCartData(tempData);
+  }, [cartItems])
 
   return (
     <div>Cart</div>
