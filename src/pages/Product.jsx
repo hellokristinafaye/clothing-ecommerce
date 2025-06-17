@@ -75,7 +75,7 @@ const Product = () => {
               }
             </div>
           </div>
-          <button className="">ADD TO CART</button>
+          <button className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 cursor-pointer">ADD TO CART</button>
         </div>
       </div>
     </div>
