@@ -16,7 +16,8 @@ const ShopContextProvider = (props) => {
 
     // In case User hasn't selected a size
     if (!size) {
-      toast
+      toast.error("Please select a product size.")
+      return;
     }
 
 
