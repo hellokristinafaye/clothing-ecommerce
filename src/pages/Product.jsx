@@ -40,7 +40,9 @@ const Product = () => {
               ))
               }
           </div>
-          <div className="w-full sm:w-[80%]"></div>
+          <div className="w-full sm:w-[80%]">
+            <img src={image} alt="" className="" />
+          </div>
 
         </div>
       </div>
