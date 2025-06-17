@@ -11,7 +11,12 @@ const RelatedProducts = ({ category, subCategory }) => {
         if (products.length > 0) {
             // creates a copy of all products
             let productsCopy = products.slice();
-            productsCopy = productsCopy.filter((item)=>category === item.category)
+            
+            productsCopy = productsCopy.filter((item) => category === item.category)
+            productsCopy = productsCopy.filter((item)=> subCategory === item.subCategory)
+
+            console.log(productsCopy.slice(0,5))
+
         }
 
     },[products])
