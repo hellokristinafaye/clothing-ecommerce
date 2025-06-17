@@ -29,7 +29,9 @@ const Product = () => {
   return productData?  (
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">Product
 
+      <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
 
+      </div>
     </div>
   ) : <div className="opacity-0"></div>
 }
