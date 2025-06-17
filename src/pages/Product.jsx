@@ -63,7 +63,7 @@ const Product = () => {
             <img src={assets.star_dull_icon} alt="" className="w-3.5" />
             <p className="pl-2">(122)</p>
           </div>
-          <p className="">{currency}</p>
+          <p className="">{currency} {productData.price}</p>
         </div>
       </div>
     </div>
