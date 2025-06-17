@@ -96,6 +96,6 @@ const Product = () => {
   ) : (
     <div className="opacity-0"></div>
   );
-`}
+}
 
 export default Product
