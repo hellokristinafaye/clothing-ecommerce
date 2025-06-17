@@ -78,7 +78,9 @@ const Product = () => {
           <button className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 cursor-pointer">ADD TO CART</button>
           <hr className="mt-8 sm:w-4/5 g" />
           <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1g">
-
+              <p className="">100% Original product.</p>
+              <p className="">Cash on Delivery is available on this product.</p>
+              <p className="">Easy return and exchange policy within 7 days.</p>
           </div>
         </div>
       </div>
