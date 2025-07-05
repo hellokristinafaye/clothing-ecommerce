@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
 import { assets } from '../assets/frontend_assets/assets';
+import CartTotal from '../components/CartTotal';
 
 const Cart = () => {
 
@@ -32,6 +33,8 @@ const Cart = () => {
 
       <div className="text-2xl mb-3">
         <Title text1={'YOUR'} text2={'CART'} />
+                <CartTotal />
+
       </div>
 
       <div className="">
@@ -67,6 +70,8 @@ const Cart = () => {
                   </div>
 
                   <input
+                    // updates cart count based on this input field
+                    onChange={(e)=> e.target.value === "" || e.target.value === 0 ? null : updateQuantity(item._id, item.size, Number(e.target.value))}
                     type="number"
                     min={1}
                     defaultValue={item.quantity}
@@ -79,12 +84,14 @@ const Cart = () => {
                     className="w-4 mr-4 sm:w-5 cursor-pointer"
                   />
                 </div>
+
               </div>
             );
 
           } )
         }
       </div>
+                <CartTotal />
 
     </div>
   )

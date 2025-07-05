@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Collection from './pages/Collection';
@@ -13,32 +13,50 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
+import useLocalStorage from 'use-local-storage';
+
 // The below line seems unnecessary?? But we'll keep the comment in case of future bug.
+
 // import 'react-toastify/dist/ReactToastify.css'
+// import assets from './assets'
 
 const App = () => {
+
+  const [theme, setTheme] = useLocalStorage("theme", "light");
+
+  const switchTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    console.log(theme);
+  }
+
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-      <ToastContainer  />
-      <Navbar/>
+    <div
+      data-theme={theme}
+      className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]"
+    >
+      <ToastContainer />
+      <Navbar
+      />
+      <button onClick={switchTheme} className="theme-switch">
+        Light/Dark Mode
+      </button>
       <SearchBar />
-      
+
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/collection" element={<Collection/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/product/:productId" element={<Product/>} />
-        <Route path="/cart" element={<Cart/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/place-order" element={<PlaceOrder/>} />
-        <Route path="/orders" element={<Orders/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:productId" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/place-order" element={<PlaceOrder />} />
+        <Route path="/orders" element={<Orders />} />
       </Routes>
 
-      <Footer/>
-
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App
