@@ -14,10 +14,11 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css'
+// import assets from './assets'
 
 const App = () => {
 
-  const [theme, setTheme] = useState();
+  const [theme, setTheme] = useState('light');
 
   const switchTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -32,7 +33,7 @@ const App = () => {
       <ToastContainer />
       <Navbar />
       <button onClick={switchTheme} className="theme-switch">
-        Theme Switch
+        Theme
       </button>
       <SearchBar />
 

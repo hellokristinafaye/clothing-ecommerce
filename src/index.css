@@ -32,6 +32,7 @@ a.active hr {
     --background-color: #716c6c;
     --text-primary: #fff;
 }
+
 * {
     font-family: Outfit, sans-serif;
     background: var(--background-color);
