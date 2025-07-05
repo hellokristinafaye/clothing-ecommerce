@@ -13,12 +13,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
+import useLocalStorage from 'use-local-storage';
 // import 'react-toastify/dist/ReactToastify.css'
 // import assets from './assets'
 
 const App = () => {
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useLocalStorage("theme", "light");
 
   const switchTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -31,7 +32,8 @@ const App = () => {
       className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]"
     >
       <ToastContainer />
-      <Navbar />
+      <Navbar
+      />
       <button onClick={switchTheme} className="theme-switch">
         Theme
       </button>
