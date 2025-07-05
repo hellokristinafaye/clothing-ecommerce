@@ -69,6 +69,8 @@ const ShopContextProvider = (props) => {
     setCartItems(cartData);
   }
 
+  
+
   const value = {
     products,
     currency,
