@@ -14,6 +14,9 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
 import useLocalStorage from 'use-local-storage';
+
+// The below line seems unnecessary?? But we'll keep the comment in case of future bug.
+
 // import 'react-toastify/dist/ReactToastify.css'
 // import assets from './assets'
 

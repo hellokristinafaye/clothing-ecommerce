@@ -8,16 +8,19 @@ const SearchBar = () => {
       useContext(ShopContext);
     
     // Logic to show searchbar on Collection page?? Not sure quite how necessary this is? Includes useLocation hook and useEffect below.
+    // been messing around with it and still not sure why we would want to make this distinction. B/c I WANT the search to wokr from any location??? 
     const [visible, setVisible] = useState(false);
     
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname.includes('collection')) {
+        if (location.pathname.includes("collection")) {
             setVisible(true);
         } else {
             setVisible(false);
         }
+
+        // setVisible(false);
     }, [location])
 
   return showSearch && visible ? (
