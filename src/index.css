@@ -2,13 +2,11 @@
 @import "tailwindcss";
 /* Google Fonts Outfit and Prata; tailwind. */
 
-a.active hr{
+a.active hr {
     display: block;
 }
 
-*{
-    font-family: Outfit, sans-serif;
-}
+
 
 .prata-regular {
     font-family: "Prata", serif;
@@ -20,8 +18,30 @@ a.active hr{
     display: none;
 }
 
+
+.theme-switch {
+    background: pink;
+    cursor: pointer;
+}
+
+:root {
+    --background-color: #fff;
+    --text-primary: #000;
+}
+[data-theme='dark'] {
+    --background-color: #000;
+    --text-primary: #fff;
+}
+* {
+    font-family: Outfit, sans-serif;
+    background: var(--background-color);
+    color: var(--text-primary);
+}
+
+
+
 @media(max-width:640px) {
-    a.active{
+    a.active {
         background-color: black;
         color: white;
     }
