@@ -35,7 +35,7 @@ const App = () => {
       <Navbar
       />
       <button onClick={switchTheme} className="theme-switch">
-        Theme
+        Light/Dark Mode
       </button>
       <SearchBar />
 
