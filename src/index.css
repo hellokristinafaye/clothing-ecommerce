@@ -29,13 +29,14 @@ a.active hr {
     --text-primary: #000;
 }
 [data-theme='dark'] {
-    --background-color: #000;
+    --background-color: #716c6c;
     --text-primary: #fff;
 }
 * {
     font-family: Outfit, sans-serif;
     background: var(--background-color);
     color: var(--text-primary);
+    transition: all 0.5s;
 }
 
 
